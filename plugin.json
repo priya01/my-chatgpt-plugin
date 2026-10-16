@@ -1,0 +1,21 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "smart-task-weather-buddy",
+  "version": "1.1.0",
+  "description": "A task helper with demo weather lookups and a temporary task list.",
+  "author": { "name": "Plugin author" },
+  "keywords": ["tasks", "weather", "productivity", "MCP"],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Smart Task & Weather Buddy",
+        "shortDescription": "Tasks and demo weather",
+        "longDescription": "Add and review a temporary task list and look up sample weather responses through a hosted MCP service. Weather is demo data, and tasks are held in memory only.",
+        "developerName": "Plugin author",
+        "category": "Productivity",
+        "capabilities": ["Tools"],
+        "defaultPrompt": "Help me manage my tasks or look up demo weather using Smart Task & Weather Buddy."
+      }
+    }
+  }
+}
